@@ -71,6 +71,7 @@ type Post struct {
 	Template      string         `json:"template,omitempty"`
 	Title         RenderedString `json:"title,omitempty"`
 	Type          string         `json:"type,omitempty"`
+	YoastHead     string         `json:"yoast_head,omitempty"`
 }
 
 func (entity *Post) setService(c *PostsService) {
